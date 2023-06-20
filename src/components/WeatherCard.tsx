@@ -31,22 +31,29 @@ const WeatherCard = () => {
 
   return (
     <Card
+      display="flex"
+      flexDirection="column"
       color="black"
       backgroundImage={image}
       backgroundSize="cover"
-      marginTop="100px"
-      width="300px"
-      height="450px"
+      width="400px"
+      height="650px"
       textAlign="center"
     >
-      <SearchInput />
+      <Box display="flex" alignItems="center" justifyContent="center">
+        <SearchInput />
+      </Box>
       <City />
       <CardBody>
         <Box textAlign="center">
           <Heading>{`${celsiusConverter(data?.main.temp)}°c`}</Heading>
           <WeatherDescription />
         </Box>
-        <HStack marginTop="120px" justifyContent="space-between">
+        <HStack
+          marginTop="200px"
+          justifyContent="space-between"
+          alignItems="flex-end"
+        >
           <HumidityBox />
           <WindBox />
         </HStack>

@@ -33,7 +33,8 @@ const SearchInput = () => {
           borderColor="transparent"
           color="white"
           backgroundColor="blackAlpha.500"
-          marginLeft="50px"
+          justifyContent="center"
+          alignItems="center"
           width="200px"
         >
           <InputRightElement
