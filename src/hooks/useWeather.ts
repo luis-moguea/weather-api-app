@@ -1,4 +1,5 @@
 import useData from "./useData"
+import { key } from "./useGlobal"
 
  interface Weather {
     id: number
@@ -8,6 +9,6 @@ import useData from "./useData"
 }
 
 
-const useWeather = () => useData<Weather>(`/weather?q=London&appid=a54ebb23b31b921b86d72d7df850867f`)
+const useWeather = () => useData<Weather>(`/weather?q=London&appid=${key}`)
 
 export default useWeather

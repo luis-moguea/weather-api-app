@@ -29,6 +29,8 @@ export interface Data {
   wind: Wind;
 }
 
+export const key = import.meta.env.VITE_API_KEY
+
 const useGlobal = () => {
   const [data, setData] = useState<Data | undefined>(undefined);
   const [error, setError] = useState("");
@@ -46,7 +48,7 @@ const useGlobal = () => {
       isLoading(true);
       apiClient
         .get<Data>(
-          `/weather?q=${city}&appid=a54ebb23b31b921b86d72d7df850867f`,
+          `/weather?q=${city}&appid=${key}`,
           {
             signal: controller.signal,
           }
