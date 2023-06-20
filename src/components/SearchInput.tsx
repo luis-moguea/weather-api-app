@@ -46,7 +46,7 @@ const SearchInput = () => {
           <Input
             borderRadius={20}
             type="text"
-            placeholder="Type a city"
+            placeholder="Type a city..."
           ></Input>
         </InputGroup>
       </form>
