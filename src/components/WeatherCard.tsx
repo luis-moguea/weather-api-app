@@ -33,6 +33,7 @@ const WeatherCard = () => {
     <Card
       display="flex"
       flexDirection="column"
+      marginTop="15px"
       color="black"
       backgroundImage={image}
       backgroundSize="cover"
