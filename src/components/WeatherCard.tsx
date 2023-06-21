@@ -11,9 +11,10 @@ import tenGrades from "../assets/less-10.jpg";
 import twentyGrades from "../assets/less-20.jpg";
 import thirtyGrades from "../assets/less-30.jpg";
 import moreThanThirtyGrades from "../assets/more-30.jpg";
+import SpinnerComponet from "./SpinnerComponet";
 
 const WeatherCard = () => {
-  const { data } = useGlobal();
+  const { data, loading } = useGlobal();
 
   const [image, setImage] = useState("");
 
@@ -44,6 +45,7 @@ const WeatherCard = () => {
       <Box display="flex" alignItems="center" justifyContent="center">
         <SearchInput />
       </Box>
+      {loading && <SpinnerComponet />}
       <City />
       <CardBody>
         <Box textAlign="center">
