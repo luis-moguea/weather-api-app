@@ -40,6 +40,10 @@ const useGlobal = () => {
     (state: { city: { city: string } }) => state.city.city
   );
 
+  const resetError = () => {
+    setError("")
+  }
+
 
   useEffect(() => {
     const controller = new AbortController();
@@ -62,11 +66,13 @@ const useGlobal = () => {
             wind: { speed: res.data.wind.speed },
           };
           setData(newData)
+          resetError()
           isLoading(false);
         })
         .catch((err) => {
           if (err instanceof CanceledError) return;
           setError(err.message);
+          isLoading(false)
         });
     };
 

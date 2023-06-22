@@ -1,15 +1,10 @@
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { BsSearch } from "react-icons/bs";
 import { updateCity } from "../redux/state";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const SearchInput = () => {
   const dispatch = useDispatch();
-  const city = useSelector(
-    (state: { city: { city: string } }) => state.city.city
-  );
-
-  console.log(city);
 
   const handleSubmit = () => {
     const input = document.querySelector("input");

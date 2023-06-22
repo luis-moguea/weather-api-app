@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, HStack, Heading } from "@chakra-ui/react";
+import { Box, Card, CardBody, HStack, Heading, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import WeatherDescription from "./WeatherDescription";
 import { celsiusConverter } from "../services/celsius-convertion";
@@ -53,6 +53,9 @@ const WeatherCard = () => {
           <WeatherDescription />
         </Box>
         <HStack
+          padding="0.2em"
+          width="100%"
+          backgroundColor="whiteAlpha.400"
           marginTop="200px"
           justifyContent="space-between"
           alignItems="flex-end"
