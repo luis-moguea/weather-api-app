@@ -21,7 +21,7 @@ This project was created using:
 - Typescript
 - Chakra-ui
 - Axios
-- redux
+- Redux
 - OpenWeather API
 
 ## Setup
