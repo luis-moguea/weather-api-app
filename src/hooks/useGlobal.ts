@@ -65,8 +65,8 @@ const useGlobal = () => {
             id: res.data.id,
             wind: { speed: res.data.wind.speed },
           };
-          setData(newData)
           resetError()
+          setData(newData)
           isLoading(false);
         })
         .catch((err) => {
