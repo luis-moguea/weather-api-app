@@ -22,7 +22,7 @@ This project was created using:
 - Chakra-ui
 - Axios
 - redux
-- openWeather API
+- OpenWeather API
 
 ## Setup
 
