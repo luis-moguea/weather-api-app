@@ -46,5 +46,5 @@ To run this project, just clone this repository from Github and run it locally u
    npm run dev
 ```
 
-![General view](![Mobile view](https://github.com/luis-moguea/react-videogames-dashboard/blob/main/src/assets/mobile-view.png?raw=true)
+![General view](https://github.com/luis-moguea/weather-api-app/blob/main/src/assets/view.png?raw=true)
 )
