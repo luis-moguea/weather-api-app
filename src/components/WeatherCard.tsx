@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, HStack, Heading, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, HStack, Heading } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import WeatherDescription from "./WeatherDescription";
 import { celsiusConverter } from "../services/celsius-convertion";
