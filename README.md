@@ -2,8 +2,8 @@
 
 ## Description
 
-This app allows users to track in real time the temperature, wind speed and humidity of almost any place around the world 
-by just typing the wished place in the form.
+This app allows users to track real-time temperature, wind speed, and humidity of almost anywhere in the world.
+Simply typing the desired place in the form.
 
 ## Features
 
