@@ -7,7 +7,7 @@ const City = () => {
   return (
     <>
       {error && <Text marginTop="10px">Ups! This place wasn't found...</Text>}
-      <Heading marginTop="150px">{data?.name}</Heading>;
+      <Heading marginTop="150px">{data?.name}</Heading>
     </>
   );
 };
