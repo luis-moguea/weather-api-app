@@ -18,6 +18,12 @@ const SearchInput = () => {
     event.preventDefault();
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      handleSubmit();
+    }
+  };
+
   return (
     <>
       <form onSubmit={handleOnSubmit}>
@@ -40,6 +46,7 @@ const SearchInput = () => {
           />
           <Input
             borderRadius={20}
+            onKeyDown={handleKeyDown}
             type="text"
             placeholder="Type a city..."
           ></Input>
